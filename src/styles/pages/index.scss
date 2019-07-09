@@ -105,7 +105,7 @@
 		&-left{
 			left: 0;
 			&:before{
-				background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 20.46%);
+				background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 20.46%);
 			}
 			&-btn{
 				left: -29px;
@@ -137,7 +137,7 @@
 		&-right{
 			right: 0;
 			&:before{
-				background: linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 20.46%);
+				background: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 20.46%);
 			}
 			&-btn{
 				right: -29px;
@@ -173,6 +173,7 @@
 			display: flex;
 			align-items: center;
 			color: rgba(0, 0, 0, 0.5);
+			font-weight: 600;
 			padding: 20px;
 			cursor: pointer;
 			transition: 0.3s;
