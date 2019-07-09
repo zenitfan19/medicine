@@ -80,6 +80,9 @@
 					@media screen and (max-width: 1024px) {
 						left: 20%;
 					}
+					@media screen and (max-width: 767px) {
+						left: 50%;
+					}
 				}
 				&.left{					
 					@media screen and (max-width: 768px) {
@@ -481,6 +484,7 @@
 		}
 		@media screen and (max-width: 767px) {
 			right: -200%;
+			display: none;
 		}
 		&.active{
 			right: 20%;
