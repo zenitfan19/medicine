@@ -738,17 +738,26 @@
 		transition-delay: 0.1s;
 		@media screen and (max-width: 767px) {
 			bottom: -110%;
+			transform: translateX(-1000px);
 		}
 		&.left {
-			bottom: -120vh;
-			transform: translateY(50px);
+			bottom: -120vh;			
+			@media screen and (max-width: 767px) {
+				transform: translate(-1000px, 50px);
+			}
 		}
 		&.right {
 			bottom: -110vh;
 			transform: translateY(50px);
+			@media screen and (max-width: 767px) {
+				transform: translate(-1000px, 50px);
+			}
 		}
 		&.scroll{
 			bottom: -70px;
+			@media screen and (max-width: 767px) {
+				transform: translateX(0px);
+			}						
 		}
 		&.left.scroll {
 			bottom: -170px;
