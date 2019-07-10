@@ -57,8 +57,8 @@ $(document).on('click', '.main-center-left, .main-center-left-btn', function (ev
 	}
 });
 
-$(document).on('click', '.main-center-right, .main-center-right-btn', function (event) {	
-	if( (screen.width > 767 && !(event.target.classList.contains("main-center-right-btn"))) || (screen.width <= 767 && (event.target.classList.contains("main-center-right-btn"))) ) {
+$(document).on('click', '.main-center-right, .main-center-right-btn, .header-right__item', function (event) {	
+	if( (event.target.classList.contains("header-right__item")) || (screen.width > 767 && !(event.target.classList.contains("main-center-right-btn"))) || (screen.width <= 767 && (event.target.classList.contains("main-center-right-btn"))) ) {
 		if ($(document).find('.main-left').hasClass('active')) {
 			$(document).find('.main-center__label').removeClass('left');
 			$(document).find('.main-center__box').removeClass('left');
@@ -79,16 +79,20 @@ $(document).on('click', '.main-center-right, .main-center-right-btn', function (
 			setTimeout(function () {
 				$(document).find('.main-center__box2').addClass('right');
 			}, 150);
-			if($(this).hasClass('main-center-right-btn')) {
-
+			if($(this).hasClass('main-center-right-btn') || $(this).hasClass('header-right__item')) {
+				if($(this).hasClass('header-right__item')) {
+					$(document).find('.main-center-right').fadeOut('fast');
+				}
 			} else {
 				$(this).fadeOut('fast');
 			}	
 			$(document).find('.main-center-left').fadeIn('fast');
 			$(document).find('.main-center-left-wrap').hide();
 		} else {
-			if($(this).hasClass('main-center-right-btn')) {
-
+			if($(this).hasClass('main-center-right-btn')|| $(this).hasClass('header-right__item')) {
+				if($(this).hasClass('header-right__item')) {
+					$(document).find('.main-center-right').fadeOut('fast');
+				}
 			} else {
 				$(this).fadeOut('fast');
 			}	

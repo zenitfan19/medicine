@@ -56,6 +56,7 @@
 			}
 			&.active.right {
 				top: 65%;
+				z-index: 100;
 				.header-right__item {
 					display: none;
 				}
