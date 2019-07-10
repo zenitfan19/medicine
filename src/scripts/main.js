@@ -15,7 +15,10 @@ $(document).on('click', '.main-mobile-container-btn', function () {
 
 $(document).on('click', '.main-mobile-container-form-row__submit', function (e) {
 		e.preventDefault();
-		$(document).find('.main-mobile-container-form-row__alert').slideDown('slow');
+		console.log($(document).find('.main-mobile-container-form-row input').val());
+		if($(document).find('.main-mobile-container-form-row input').val()) {
+			$(document).find('.main-mobile-container-form-row__alert').slideDown('slow');
+		}		
 });
 
 $(document).on('click', '.main-center-left, .main-center-left-btn', function (event) {	
