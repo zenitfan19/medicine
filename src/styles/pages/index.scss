@@ -748,7 +748,7 @@
 			transform: translateY(50px);
 		}
 		&.scroll{
-			bottom: -170px;
+			bottom: -70px;
 		}
 		&.left.scroll {
 			bottom: -170px;
@@ -839,7 +839,7 @@
 					width: 0
 				}
 				@media screen and (max-width: 767px) {
-					height: calc(100vh - 210px);
+					height: calc(100vh - 280px);
 				}							
 			}
 			&-item{
