@@ -8,6 +8,16 @@ $(document).ready(function () {
 	});
 });
 
+$(document).on('click', '.main-mobile-container-btn', function () {
+	let destination = $('.main-mobile-container-form').offset().top;
+	$('html').animate({ scrollTop: destination }, 1100);	
+});
+
+$(document).on('click', '.main-mobile-container-form-row__submit', function (e) {
+		e.preventDefault();
+		$(document).find('.main-mobile-container-form-row__alert').slideDown('slow');
+});
+
 $(document).on('click', '.main-center-left, .main-center-left-btn', function (event) {	
 	if( (screen.width > 767 /*&& !(event.target.classList.contains("main-center-left-btn"))*/) || (screen.width <= 767 && (event.target.classList.contains("main-center-left-btn"))) ) {
 		if ($(document).find('.main-right').hasClass('active')) {
