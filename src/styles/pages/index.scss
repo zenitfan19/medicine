@@ -726,9 +726,11 @@
 		transition-delay: 0.1s;
 		&.left {
 			bottom: -120vh;
+			transform: translateY(50px);
 		}
 		&.right {
 			bottom: -110vh;
+			transform: translateY(50px);
 		}
 		&.scroll{
 			bottom: 0;
