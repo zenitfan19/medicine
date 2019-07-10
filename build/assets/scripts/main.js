@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 $(document).on('click', '.main-center-left, .main-center-left-btn', function (event) {	
-	if( (screen.width > 767 && !(event.target.classList.contains("main-center-left-btn"))) || (screen.width <= 767 && (event.target.classList.contains("main-center-left-btn"))) ) {
+	if( (screen.width > 767 /*&& !(event.target.classList.contains("main-center-left-btn"))*/) || (screen.width <= 767 && (event.target.classList.contains("main-center-left-btn"))) ) {
 		if ($(document).find('.main-right').hasClass('active')) {
 			$(document).find('.main-center__label').removeClass('right');
 			$(document).find('.main-center__box').removeClass('right');
@@ -58,7 +58,7 @@ $(document).on('click', '.main-center-left, .main-center-left-btn', function (ev
 });
 
 $(document).on('click', '.main-center-right, .main-center-right-btn, .header-right__item', function (event) {	
-	if( (event.target.classList.contains("header-right__item")) || (screen.width > 767 && !(event.target.classList.contains("main-center-right-btn"))) || (screen.width <= 767 && (event.target.classList.contains("main-center-right-btn"))) ) {
+	if( (event.target.classList.contains("header-right__item")) || (screen.width > 767 /*&& !(event.target.classList.contains("main-center-right-btn"))*/) || (screen.width <= 767 && (event.target.classList.contains("main-center-right-btn"))) ) {
 		if ($(document).find('.main-left').hasClass('active')) {
 			$(document).find('.main-center__label').removeClass('left');
 			$(document).find('.main-center__box').removeClass('left');
