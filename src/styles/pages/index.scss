@@ -1,6 +1,12 @@
 .main{
 	height: calc(100vh - 90px);
 	font-family: 'Montserrat';
+	&.left {
+		height: calc(100vh + 100px);
+		.main-center {
+			height: calc(100vh + 100px);
+		}
+	}
 	&-footer{
 		position: absolute;
 		left: 20px;
@@ -15,11 +21,23 @@
 	}
 	&-center{
 		height: 100vh;
-    top: 0;
+    	top: 0;
 		position: relative;
 		overflow: hidden;
 		transition: 0.6s;
 		transition-delay: 0.1s;
+		&-right-mob {
+			display: none;
+			&.active {
+				display: block;
+				position: absolute;
+				top: 60%;
+				max-width: calc(100% - 20px);
+				width: calc(100% - 20px);
+				left: 50%;
+				transform: translateX(-50%);
+			}			
+		}
 		&.scroll{
 			top: -110%;
 			@media screen and (max-width: 767px) {
@@ -250,6 +268,9 @@
 					right: 160px;
 					top: 55%;
 				}
+				@media screen and (max-width: 767px) {
+					display: none;
+				}
 				.main-center-left__img{
 					position: absolute;
 					left: 104%;
@@ -344,6 +365,9 @@
 					left: 160px;
 					top: 39%;
 				}
+				@media screen and (max-width: 767px) {
+					display: none;
+				}
 				.main-center-right__img{
 					overflow: hidden;
 					position: absolute;
@@ -392,6 +416,9 @@
 			@media screen and (max-width: 767px) {
 				font-size: 12px;
 				white-space: nowrap;
+				&.left {
+					top: 92%;
+				}
 			}
 			&:before{
 				content: '';
@@ -432,6 +459,9 @@
 			left: 10%;
 			@media screen and (max-width: 768px) {
 				left: 5%;
+			}
+			@media screen and (max-width: 767px) {
+				display: none;
 			}			
 		}
 		&.scroll{
@@ -589,6 +619,9 @@
 		bottom: -100%;
 		transition: 0.6s;
 		transition-delay: 0.1s;
+		&.left {
+			bottom: -120%;
+		}
 		&.scroll{
 			bottom: 0;
 		}

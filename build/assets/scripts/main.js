@@ -14,9 +14,13 @@ $(document).on('click', '.main-center-left', function () {
 		$(document).find('.main-center__box').removeClass('right');
 		$(document).find('.main-center__label').addClass('left');
 		$(document).find('.main-center__box').addClass('left');
+		$(document).find('.main-center-bot').addClass('left');
 		$(document).find('.main-center__box2').addClass('left');
+		$(document).find('.main-center-right-mob').addClass('active');
 		$(document).find('.main-center__box2').removeClass('right');
 		$(document).find('.main-left').addClass('active');
+		$(document).find('.main').addClass('left');
+		$(document).find('.main-bot').addClass('left');
 		setTimeout(function () {
 			$(document).find('.main-right').removeClass('active');
 		}, 100);
@@ -28,8 +32,12 @@ $(document).on('click', '.main-center-left', function () {
 		$(document).find('.main-center-right-wrap').fadeOut('fast');
 		$(document).find('.main-center__label').addClass('left');
 		$(document).find('.main-center__box').addClass('left');
+		$(document).find('.main-center-bot').addClass('left');
 		$(document).find('.main-center__box2').addClass('left');
+		$(document).find('.main-center-right-mob').addClass('active');
 		$(document).find('.main-left').addClass('active');
+		$(document).find('.main').addClass('left');
+		$(document).find('.main-bot').addClass('left');
 	}
 });
 
@@ -37,10 +45,14 @@ $(document).on('click', '.main-center-right', function () {
 	if ($(document).find('.main-left').hasClass('active')) {
 		$(document).find('.main-center__label').removeClass('left');
 		$(document).find('.main-center__box').removeClass('left');
+		$(document).find('.main-center-right-mob').removeClass('active');
 		$(document).find('.main-center__box2').removeClass('left');
 		$(document).find('.main-center__label').addClass('right');
 		$(document).find('.main-center__box').addClass('right');
 		$(document).find('.main-right').addClass('active');
+		$(document).find('.main-center-bot').removeClass('left');
+		$(document).find('.main').removeClass('left');
+		$(document).find('.main-bot').removeClass('left');
 		setTimeout(function () {
 			$(document).find('.main-left').removeClass('active');
 		}, 100);
