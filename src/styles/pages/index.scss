@@ -2,9 +2,9 @@
 	height: calc(100vh - 90px);
 	font-family: 'Montserrat';
 	&.left {
-		height: calc(100vh + 100px);
+		height: calc(100vh + 170px);
 		.main-center {
-			height: calc(100vh + 100px);
+			height: calc(100vh + 170px);
 		}
 	}
 	&-footer{
@@ -31,12 +31,16 @@
 			&.active {
 				display: block;
 				position: absolute;
-				top: 60%;
+				top: 57%;
 				max-width: calc(100% - 20px);
 				width: calc(100% - 20px);
 				left: 50%;
 				transform: translateX(-50%);
-			}			
+			}
+			.header-right__item	{
+				display: flex;
+				margin: 0 auto;
+			}		
 		}
 		&.scroll{
 			top: -110%;
@@ -626,7 +630,7 @@
 			bottom: 0;
 		}
 		&.left.scroll {
-			bottom: -100px;
+			bottom: -170px;
 			.main-bot-items-wrapper {
 				height: calc(100vh - 160px);
 			}
