@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 $(document).on('click', '.main-mobile-container-btn', function () {
 	let destination = $('.main-mobile-container-form').offset().top;
-	$('html').animate({ scrollTop: destination }, 1100);	
+	$('html, body').animate({ scrollTop: destination }, 1100);	
 });
 
 $(document).on('click', '.main-mobile-container-form-row__submit', function (e) {
